@@ -23,10 +23,14 @@ public class es_3 {
         String[] tokens = input.split(",");
         for (String token : tokens) {
             int i = 0;
-            while (i < token.trim().length()) {
-                System.out.println(token.trim().charAt(i));
+            while (i < token.length()) {
+                System.out.print(token.charAt(i));
+                if (i < token.length() - 1) {
+                    System.out.print(",");
+                }
                 i++;
             }
+            System.out.println();
         }
     }
 }
